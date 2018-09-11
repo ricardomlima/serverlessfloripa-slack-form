@@ -67,3 +67,4 @@ typings/
 
 #configuration defined output file
 dist/bundle.js
+dist/index.html

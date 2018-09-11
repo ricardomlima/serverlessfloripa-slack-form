@@ -15,6 +15,14 @@ module.exports = {
             template: 'src/index.html'
         })
     ],
+    module:{
+        rules: [
+            {
+                test: /\.css$/,
+                use: [ 'style-loader', 'css-loader']
+            }
+        ]
+    },
     devServer: {
         port:3000,
         open: true

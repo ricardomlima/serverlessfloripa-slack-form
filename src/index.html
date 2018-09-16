@@ -4,8 +4,25 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <title><%= htmlWebpackPlugin.options.title %></title>
         <body>
-            <div class='container'>
-                Serverless Floripa!
+            <div id="wrapper">
+                <div class="main">
+                    <div class="header">
+                        <h1>
+                            <strong>serverlessfloripa</strong>
+                        </h1>
+                        <h2>
+                            Enter your email to join serverlessfloripa's Slack channel!
+                        </h2>
+                    </div>
+                    <div class="content">
+                        <div class="information">
+                            <form method="POST" action="/invite" id="join-form" class="form">
+                                <input type="text" name="email" placeholder="Enter Your Email Address" id="slack-email" class="field">
+                                <input type="submit" value="Join" class="submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </body>
     </head>

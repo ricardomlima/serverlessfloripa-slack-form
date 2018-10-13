@@ -100,7 +100,7 @@ h2 {
 }
 
 .app-feedback{
-  display:block;
+  display:none;
   text-align:center;
   font-family: monospace;
   font-size: 16px;

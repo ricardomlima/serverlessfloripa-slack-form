@@ -13,7 +13,8 @@ function sendInviteRequest(){
   const formData = { email: submittedEmail };
   const formattedFormData = JSON.stringify(formData);
 
-  request.open('POST', '/invite');
+  request.open('POST', 'https://us-central1-serverlessfloripa.cloudfunctions.net/handleInviteRequest');
+  request.setRequestHeader('Content-Type', 'application/json')
   request.send(formattedFormData);
 }
 

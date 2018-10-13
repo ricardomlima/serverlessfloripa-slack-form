@@ -1,6 +1,6 @@
 import './app.css';
 
-var form = document.querySelector('form')
+const form = document.querySelector('form');
 
 function submitForm(evt){
   evt.preventDefault();
@@ -8,10 +8,10 @@ function submitForm(evt){
 }
 
 function sendInviteRequest(){
-  var submittedEmail = document.getElementById('slack-email').value;
-  var request = new XMLHttpRequest();
-  var formData = { email: submittedEmail };
-  var formattedFormData = JSON.stringify(formData);
+  const submittedEmail = document.getElementById('slack-email').value;
+  const request = new XMLHttpRequest();
+  const formData = { email: submittedEmail };
+  const formattedFormData = JSON.stringify(formData);
 
   request.open('POST', '/invite');
   request.send(formattedFormData);

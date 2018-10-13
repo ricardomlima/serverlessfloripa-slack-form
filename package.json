@@ -14,7 +14,8 @@
   },
   "keywords": [
     "serverlessfloripa",
-    "serverless"
+    "serverless",
+    "slack"
   ],
   "author": "Ricardo M. Lima",
   "license": "ISC",

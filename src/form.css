@@ -107,9 +107,15 @@ h2 {
 }
 
 .error{
-  color:#ef5959;
+  display:block;
+  color:#8ca516;
 }
 
 .success{
+  display:block;
   color:#0cb538;
+}
+
+.loading{
+  opacity:0.6;
 }
